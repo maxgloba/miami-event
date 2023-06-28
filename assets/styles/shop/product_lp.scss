@@ -1,0 +1,68 @@
+$mainFont: 'Archivo',
+sans-serif;
+$mainFColor: #000;
+$accentColor: #ff5100;
+$darkColor: #1a1a1a;
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: $mainFont;
+  color: $mainFColor;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  
+
+  @include _md {
+    padding: 0 30px;
+  }
+
+  @include _sm {
+    padding: 0 15px;
+  }
+}
+
+.img-response {
+  width: 100%;
+  height: auto;
+}
+
+.accented {
+  color: $accentColor;
+}
+
+.ital {
+  font-style: italic;
+}
+
+.centered {
+  text-align: center;
+}
+
+.testimonial-card {
+  transform: translateY(-40%);
+  position: relative;
+}
